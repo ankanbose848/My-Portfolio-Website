@@ -1,0 +1,163 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="description" content="Web Developer")
+    meta(name="keywords" content="Web, Web Developer, Programmer, Machine Learning")
+    meta(name="author" content="Ankan Kumar Bose")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible" content="ie=edge")
+    title Ankan
+    link(rel="icon" type="image/png" href="../static/img/logo.svg")
+    link(rel="stylesheet" href="../static/css/style.css")
+    link(rel="stylesheet" media="screen and (max-width: 1170px)" href="../static/css/tablet.css")
+    link(rel="stylesheet" media="screen and (max-width: 700px)" href="../static/css/phone.css")
+
+    link(rel="stylesheet" href="../static/css/owl.carousel.min.css")
+    link(rel="stylesheet" href="../static/css/owl.theme.default.min.css")
+    link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
+          
+  body
+    nav#navbar
+      input(type="checkbox" id="check")
+      label.checkbtn(for="check")
+        .line
+        .line
+        .line
+      #logo
+        img(src="static/img/logo.svg" alt="logo")
+  
+      ul.nav-links
+        li.nav-item
+          a(href="#home") Home
+        li.nav-item
+          a(href="#about") About
+        li.nav-item
+          a(href="#project") Projects
+        li.nav-item
+          a(href="#certificates") Certifications
+        li.nav-item
+          a(href="https://medium.com/@ankanbose_55353/a-review-of-virtual-reality-edf7bf4f3cd7" target="_blank") Articles
+        li.nav-item
+          a(href="#connect") Connect
+              
+
+    section#home
+      .home-left
+        h1 Ankan Kumar Bose
+        h3 I am a 
+          span.txt-rotate(data-period="2000",data-rotate='[ "Web Developer.", "Programmer.", "Machine Learning Enthusiast."]') 
+           
+        button(onClick="window.location.href='/'" id="resume") Get Resume
+      .home-right
+        img(src="static/img/bg-right.svg" alt="home image")
+    
+
+    section#about
+      h2.sec-head About Me
+      .about-container
+        .about-left
+          img(src="../static/img/about-img.jpeg", alt="Ankan")
+        .about-right
+          h3 Hi, I am Ankan Kumar Bose.
+          p
+            | I am a full stack Web Developer and have done backend coding in Flask and Nodejs and worked with MongoDB. Among my other skills, I am proficient in programming languages like Python and C and I have good communication skills. I have done database management in SQL. I am also a Machine Learning Enthusiast. The idea of training machines to do simple tasks that humans can do easily fascinates me. I have worked with Machine Learning algorithims like K-Nearest Neighbour Classifier, Linear Regressor, etc. 
+
+    section#project
+      h2.sec-head My Projects
+      .project-container
+        .flip-card
+          .flip-card-inner
+            .flip-card-front
+              img(src="../static/img/chat.png" alt="Web Chat App" style="border:2px solid black")
+            .flip-card-back
+              h1 Web Chat Application 
+              a(href="https://github.com/ankanbose848/Chat-app" target="_blank") Go to project repository
+
+        .flip-card
+          .flip-card-inner
+            .flip-card-front
+              img(src="../static/img/breast-cancer.jpg" alt="Breast Cancer image")
+            .flip-card-back
+              h1 Breast Cancer Classifier
+              a(href="https://github.com/ankanbose848/Breast-Cancer-Prediction" target="_blank") Go to project repository
+
+        .flip-card
+          .flip-card-inner
+            .flip-card-front
+              img(src="../static/img/corona.jpg" alt="corona image")
+            .flip-card-back
+              h1 Corona Map Plotter
+              a(href="https://github.com/ankanbose848/corona-map/tree/master" target="_blank") Go to project repository
+
+        .flip-card
+          .flip-card-inner
+            .flip-card-front
+              img(src="../static/img/imageshare.png" alt="image share")
+            .flip-card-back
+              h1 ImageShare
+              a(href="https://github.com/ankanbose848/Image-Share" target="_blank") Go to project repository
+	
+    section#certificates
+      h2.sec-head#certHead My Certifications
+
+      .certificate-container
+        .owl-carousel.owl-theme
+          .item
+            img(src="../static/img/datacamp.png" alt="data camp logo")
+            span Introduction to SQL
+            a(href="../static/certificates/Introduction_to_SQL_certificate.pdf" target="_blank") View Certificate
+          .item
+            img(src="../static/img/datacamp.png" alt="data camp logo")
+            span Joining Data in SQL
+            a(href="../static/certificates/Joining Data in SQL.pdf" target="_blank") View Certificate
+          .item
+            img(src="../static/img/datacamp.png" alt="data camp logo")
+            span Intermediate SQL
+            a(href="../static/certificates/Intermediate SQL.pdf" target="_blank") View Certificate
+          .item
+            img(src="../static/img/nptel.png" alt="nptel logo")
+            span Problem Solving Through Programming in C
+            a(href="../static/certificates/Problem Solving Through Programming in C.jpg" target="_blank") View Certificate
+          .item
+            img(src="../static/img/matlab.png" alt="matlab logo")
+            span MATLAB Onramp
+            a(href="../static/certificates/matlabcertificate.pdf" target="_blank") View Certificate
+          .item
+            img(src="../static/img/nptel.png" alt="nptel logo")
+            span Developing Soft Skills and Personality
+            a(href="../static/certificates/Developing soft skills and personality.jpg" target="_blank") View Certificate
+          .item
+            img(src="../static/img/nptel.png" alt="nptel logo")
+            span Ethics in Engineering Practice
+            a(href="../static/certificates/Ethics in Engineering Practice.jpg" target="_blank") View Certificate
+    
+    footer
+      span#connect Connect with me 
+      ul#connect-list
+        li 
+          a(href="https://www.facebook.com/ankan.bose.378" target="_blank" class="fa fa-facebook")
+        li 
+          a(href="https://www.linkedin.com/in/ankan-bose-55b45a191/" target="_blank" class="fa fa-linkedin")
+        li 
+          a(href="https://twitter.com/AnkanBose20" target="_blank" class="fa fa-twitter")
+        li 
+          a(href="https://www.instagram.com/dungeon_master26/" target="_blank" class="fa fa-instagram")
+        li 
+          a(href="https://github.com/ankanbose848" target="_blank" class="fa fa-github")
+
+      span#footnote
+        | &copy; 
+        span#year 
+        | , Ankan Kumar Bose 
+
+      span#rights
+        | All Rights Reserved.  
+            
+    // Linking all necessary javascript files  
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js")
+    script(src="../static/js/owl.carousel.min.js") 
+    script(src="../static/js/jquery.js") 
+    script(src="../static/js/script.js") 
+    
+          
